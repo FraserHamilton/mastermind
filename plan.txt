@@ -1,1 +1,18 @@
 
+1. #define PEGNUM 3 // defines number of pegs
+2. #define COLOURNUM 3 // defines number of colours
+3. structure for storing peg values. Integer array of peg number length. each entry in array is a colour number. 
+
+Low Level Functions
+1. setMode() // sets pin to output/input
+2. writeToPin() // sets pin to HIGH/LOW (light on or off)
+3. readPin() // reads whether pin is output/input
+
+Other Functions
+1. delay() // creates time delay on program
+2. getInput() // gets input from user and saves it in a peg structure
+3. generateSecret() // creates peg struct with random numbers
+4. getAnswer() // compares secret struct with input struct and returns a 2 decimal array
+5. mmap() // opens dev memory
+6. unmap() // closes dev memory
+7. game() // brings the program together 
